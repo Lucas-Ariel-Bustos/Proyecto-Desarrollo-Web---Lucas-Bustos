@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lucas Dimatteo Bajista</title>
+        <link rel="shortcut icon" href="../assets/img/Clavedefa.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+
+    <body class="fondoContacto">
+        <header class="header">
+            <img class="logoHeader" src="../assets/img/Clavedefa.jpg" alt="Logo principal" width="50" />
+            <h1 class="titulo-principal">Lucas Dimatteo</h1>
+            <nav class="nav">
+                <ul class="navegador">
+                    <li class="navegador__item"><a href="../index.html">Inicio</a></li>
+                    <li class="navegador__item"><a href="./biografia.html">Biografía</a>
+                    </li>
+                    <li class="navegador__item"><a href="./docente.html">Docente</a></li>
+                    <li class="navegador__item"><a href="sesionista.html">Sesionista</a></li>
+                    <li class="navegador__item active"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainSection">
+            <section class="contacto">
+                <div class="perfil5">
+                    <h3 class="perfil5__contacto">CONTACTO</h3>
+                    <div class="perfil5_formulario">
+                        <!-- <div class="consulta"> -->
+                        <form class="fomulario__consulta" action="send.php" method="get" enctype="multipart/form-data">
+                        <!-- </div>  -->
+                        <fieldset class="formularioConsulta">
+                                <h5 class="formulario__consulta-texto">Elige motivo por el cual quieres consultar</h5>
+                                <input type="radio" name="Motivo" id="Sesionista" />
+                                <label class="label" for="Sesionista">Sesionista</label>
+                                <input type="radio" name="Motivo" id="Clases de Instrumento" />
+                                <label class="label" for="Clases de Instrumento">Clases de instrumento</label>
+                            </fieldset>
+                            </div>
+                            <div class="datosPersonales"> 
+                                <input type="text" placeholder="Nombre Completo" />
+                                <input type="email" placeholder="Correo electrónico" />
+                            </div>    
+                            <div class="provincias">    
+                                <select>
+                                    <option disabled selected>Elige una provincia</option>
+                                    <option>Mendoza</option>
+                                    <option>San Juan</option>
+                                    <option>San Luis</option>
+                                </select>
+                            </div>    
+                            <div class="recibirInfo">    
+                            <input type="checkbox" id="aceptar informacion" />
+                            <label for="aceptar informacion">¿Quieres recibir información en tu correo?</label>
+                            </div>
+                            <div class="comentario">   
+                                <textarea cols="20" rows="5" placeholder="Escribe un comentario"></textarea>
+                            </div>
+                             <div class="botones">    
+                                <button type="reset">Limpiar formulario</button>
+                                <button type="submit">Enviar</button>
+                            </div>    
+                        </form>
+                    </div>    
+                </div>                 
+            </section>
+        </main>
+        <footer class="piedepagina">
+            <div class="instagram">
+                <a href="https://www.instagram.com/lucas__dimatteo/">
+                    <i class="bi bi-instagram"></i>
+                </a> 
+            </div>
+            <h3 class="piedepagina__titulo">Seguime en mis redes</h3>
+            <div class="facebook">
+                <a href="https://www.facebook.com/lucas.bustos.3551">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>           
+        </footer>
+    </body>
+</html>
