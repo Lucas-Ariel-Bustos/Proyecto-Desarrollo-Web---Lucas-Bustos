@@ -222,6 +222,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 2s;
+}
+
+.momento1:hover {
+    width: 350px;
 }
 
 .momento2 {
@@ -232,6 +237,11 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 2s;
+}
+
+.momento2:hover {
+    width: 600px;
 }
 
 .momento3 {
@@ -242,6 +252,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 2s;
+}
+
+.momento3:hover {
+    width: 600px;
 }
 
 .momento4 {
@@ -252,6 +267,11 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 2s;
+}
+
+.momento4:hover {
+    width: 600px;
 }
 
 .perfil2__imagen {
@@ -389,7 +409,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 2s;
 }   
+
+.docenteMomento1:hover {
+    width: 600px;
+}
 
 .docenteMomento2 {
     grid-area: docenteMomento2;
@@ -399,7 +424,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 2s;
 }   
+
+.docenteMomento2:hover {
+    width: 600px;
+}
 
 /* sesionista */
 
