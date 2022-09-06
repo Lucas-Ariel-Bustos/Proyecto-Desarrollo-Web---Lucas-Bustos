@@ -18,6 +18,11 @@
     background-size: cover;
 }
 
+.bg-propio {
+    background-color: #1b8f1b;
+    border-color: 2px solid #adad19;
+}
+
 .header {
     background-color: #1b8f1b;
     display: flex;
@@ -443,16 +448,21 @@ main {
 }
 
 .gridMenu4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "perfil4 perfil4 perfil4"
-    "perfil4 perfil4 perfil4"
-    "....... enlace  .......";
-    gap: 50px;
+    "videoYoutube enlace";
+    gap: 10px;
+}
+
+.perfilSesion {
+    border-radius: 10px;
 }
 
 .perfil4 {
@@ -473,10 +483,16 @@ main {
 }
 
 .perfil4__video {
-    width: 600px;
+    width: 100%;
     height: 100%;
     margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 10px;    
+}
+
+.videoYoutube {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-area: videoYoutube;
 }
 
 .perfil4__sesionista {
@@ -490,6 +506,7 @@ main {
 }
 
 .perfil4__enlace {
+        margin-top: 50px;
         width: 100%;
         max-width: 500px;
         max-height: 100px;
@@ -506,6 +523,11 @@ main {
 
 .perfil4__enlace:hover {
     transform: scale(1.1);
+}
+
+.bi-youtube {
+    width: 50px;
+    color: red;
 }
 
 /* contacto */
