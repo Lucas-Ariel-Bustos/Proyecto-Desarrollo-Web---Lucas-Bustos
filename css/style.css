@@ -66,6 +66,7 @@
 
 .active {
     text-decoration: underline;
+    color: black;
 }
 
 .navegador__item a:hover {
@@ -129,8 +130,7 @@ main {
 .objetivos {
     width: 100%;
     height: auto;
-    background: rgb(121,114,9);
-    background: linear-gradient(90deg, rgba(121,114,9,1) 39%, rgba(78,255,0,1) 100%);
+    background-color: #adad19;
     padding: 10px;
     border: 2px solid #570d0d;
     border-radius: 10px;
@@ -153,8 +153,10 @@ main {
 
 .alumnos {
     width: 100%;
-    background: rgb(121,114,9);
-    background: linear-gradient(90deg, rgba(121,114,9,1) 39%, rgba(78,255,0,1) 100%);
+    height: 80%;
+    background-color: #adad19;
+    /* background: rgb(121,114,9);
+    background: linear-gradient(90deg, rgba(121,114,9,1) 39%, rgba(78,255,0,1) 100%); */
     padding: 10px;
     border: 2px solid #570d0d;
     border-radius: 10px;
@@ -220,6 +222,7 @@ main {
  }
 
 .momento1 {
+    margin-top: 20px;
     width: 200px;
     height: 200px;
     grid-area: momento1;
@@ -232,6 +235,7 @@ main {
 
 .momento1:hover {
     width: 350px;
+    z-index: 1;
 }
 
 .momento2 {
@@ -353,7 +357,7 @@ main {
     animation: perfil3Movimiento 4s;
 }
 
-@keyframes perfil3Movimiento {
+/* @keyframes perfil3Movimiento {
     from {
         background-color: #1b8f1b;
     }
@@ -361,7 +365,7 @@ main {
     to {
         background-color: #adad19 
     }
-}
+} */
 
 .perfil3__imagen {
     width: 100%;
@@ -490,6 +494,7 @@ main {
 }
 
 .videoYoutube {
+    width: 500px;
     margin-top: 10px;
     margin-bottom: 10px;
     grid-area: videoYoutube;
@@ -507,7 +512,7 @@ main {
 
 .perfil4__enlace {
         margin-top: 50px;
-        width: 100%;
+        width: 60%;
         max-width: 500px;
         max-height: 100px;
         display: flex;
@@ -526,8 +531,15 @@ main {
 }
 
 .bi-youtube {
-    width: 50px;
+    font-size: 2rem;
+    width: 60px;
     color: red;
+}
+
+.enlaceYoutube {
+    display: flex;
+    padding: 0%;
+    gap: 10px;
 }
 
 /* contacto */

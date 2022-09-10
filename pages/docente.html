@@ -6,22 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lucas Dimatteo Bajista</title>
         <link rel="shortcut icon" href="../assets/img/Clavedefa.jpg" type="image/x-icon" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
         <link rel="stylesheet" href="../css/style.css" />
     </head>
-    
-    <body class="fondoDocente">
+
+    <body class="fondoSecionista">
         <header class="header">
             <img class="logoHeader" src="../assets/img/Clavedefa.jpg" alt="Logo principal" width="50" />
-            <h1 class="titulo-principal">Lucas Dimatteo</h1>
-            <nav class="nav">
-                <ul class="navegador">
-                    <li class="navegador__item"><a href="../index.html">Inicio</a></li>
-                    <li class="navegador__item"><a href="./biografia.html">Biografía</a>
-                    </li>
-                    <li class="navegador__item active"><a href="docente.html">Docente</a></li>
-                    <li class="navegador__item"><a href="./sesionista.html">Sesionista</a></li>
-                    <li class="navegador__item"><a href="./contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-propio">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><h1 class="titulo-principal">Lucas Dimatteo</h1></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="navegador__item nav-item active">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="navegador__item nav-item">
+                                <a class="nav-link" href="./biografia.html">Biografía</a>
+                            </li>
+                            <li class="navegador__item nav-item">
+                                <a class="nav-link active" href="./docente.html">Docente</a>
+                            </li>
+                            <li class="navegador__item nav-item">
+                                <a class="nav-link" href="./sesionista.html">Sesionista</a>
+                            </li>
+                            <li class="navegador__item nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             </nav>
         </header>
         
@@ -30,7 +48,7 @@
                 <div class="perfil3">
                     <img class="perfil3__imagen" src="../assets/img/Docente.jpg" alt="imagen perfil docente" /> 
                     <h3 class="perfil3__docente">Trabajo como docente</h3>
-                    <p class="perfil3__docenteParrafo">Lucas Ariel Bustos, nacido el 29 de octubre de 1983 en la Ciudad de Mendoza, Argentina. Comenzo a transitar el camino de la música en su adolescencia (1996), terminando la escuela primaria sería el "plomo" de su propio hermano mayor. Participaría de los ensayos ordenando la sala y en los descansos de la banda, incursionaría en la bateria, como instrumento inspirador. Luego de un par de años ejecutando este instrumento, recibe la oferta de tocar en una banda, pero dicha banda no requería baterista, es por eso que Matías Bustos (hermano de Lucas) decide prepararlo en el bajo eléctrico. Desde allí, no dejaría de tocar el instrumento de sonidos graves. Hasta 2001 se desarrolla musicalmente como autodidacta, pero en 2002 decide comenzar estudios sobre el mismo, así es que estudia con el reconocido Marcelo Sanchez todo lo que le puede ofrecer el bajo électrico, a su vez inicia su capacitación universitaria en Contrabajo, en la Universidad Nacional de Cuyo. Luego de dos años de estudio, empieza su formación en la misma universidad, pero esta vez como docente de Música, profesión que empesaría a ejercer desde el año 2007 en adelante. A la fecha, sigue ejerciendo la docencia y ejecutando los instrumentos graves en varios proyectos artísticos de relevancia. A partir del año 2016 comienza a utilizar el apellido materno, como parte de su nombre artística, en homenaje en vida a su madre</p>
+                    <p class="perfil3__docenteParrafo">Lucas Ariel Bustos, nacido el 29 de octubre de 1983 en la Ciudad de Mendoza, Argentina. Comenzo a transitar el camino de la música en su adolescencia (1996), terminando la escuela primaria sería el "plomo" de su propio hermano mayor. Participaría de los ensayos ordenando la sala y en los descansos de la banda, incursionaría en la bateria, como instrumento inspirador. Luego de un par de años ejecutando este instrumento, recibe la oferta de tocar en una banda, pero dicha banda no requería baterista, es por eso que Matías Bustos (hermano de Lucas) decide prepararlo en el bajo eléctrico. Desde allí, no dejaría de tocar el instrumento de sonidos graves. Hasta 2001 se desarrolla musicalmente como autodidacta, pero en 2002 decide comenzar estudios sobre el mismo, así es que estudia con el reconocido Marcelo Sanchez todo lo que le puede ofrecer el bajo électrico, a su vez inicia su capacitación universitaria en Contrabajo, en la Universidad Nacional de Cuyo. Luego de dos años de estudio, empieza su formación en la misma universidad, pero esta vez como docente de Música, profesión que empesaría a ejercer desde el año 2007 en adelante. A la fecha, sigue ejerciendo la docencia y ejecutando los instrumentos graves en varios proyectos artísticos de relevancia. A partir del año 2016 comienza a utilizar el apellido materno, como parte de su nombre artística, en homenaje en vida a su madre.</p>
                 </div>
                 <div class="perfil3__momentos docenteMomento1">
                     <img class="perfil3__imagen" src="../assets/img/alumnos.jpg" alt="imagen2_momentos1">
@@ -44,7 +62,6 @@
         </main>
 
         <footer class="piedepagina">
-            
             <div class="instagram">
                 <a href="https://www.instagram.com/lucas__dimatteo/">
                     <i class="bi bi-instagram"></i>
@@ -57,5 +74,6 @@
                 </a>
             </div>           
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
     </html>
