@@ -1,0 +1,99 @@
+.gridMenu {
+    width: 90%;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "perfil1 perfil1 objetivos"
+    "perfil1 perfil1 alumnos";
+    gap: 50px;
+}
+
+.perfil1 {
+    width: 100%;
+    background-color: #adad19;
+    padding: 10px;
+    border: 2px solid #570d0d;
+    border-radius: 10px;
+    grid-area: perfil1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* anmiación */
+
+.perfil1__imagen {
+    width: 100%;
+    border-radius: 10px;
+    animation: perfil1__imagenMovimiento 2s alternate;
+    animation-direction: reverse;
+}
+
+@keyframes perfil1__imagenMovimiento {
+    100% {
+        width: 20%;
+    }
+}
+
+.perfil1__quienSoy {
+    font-size: 25px;
+    color: #164e16;
+}
+
+.perfil1__parrafoQuienSoy {
+    font-size: 18px;
+    color: #164e16;
+}
+
+.objetivos {
+    width: 100%;
+    height: auto;
+    background-color: #adad19;
+    padding: 10px;
+    border: 2px solid #570d0d;
+    border-radius: 10px;
+    grid-area: objetivos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+.objetivosTitulo {
+    font-size: 25px;
+    color: #164e16;
+}
+
+.parrafoObjetivos {
+    font-size: 18px;
+    color: #164e16;
+}
+
+.alumnos {
+    width: 100%;
+    height: 80%;
+    background-color: #adad19;
+    /* background: rgb(121,114,9);
+    background: linear-gradient(90deg, rgba(121,114,9,1) 39%, rgba(78,255,0,1) 100%); */
+    padding: 10px;
+    border: 2px solid #570d0d;
+    border-radius: 10px;
+    grid-area: alumnos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+.alumnosTitulo {
+    font-size: 25px;
+    color: #164e16;
+}
+
+.parrafoAlumno {
+    font-size: 18px;
+    color: #164e16;
+}

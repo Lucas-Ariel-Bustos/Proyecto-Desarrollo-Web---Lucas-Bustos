@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-desarrollo-web---lucas-bustos",
+  "version": "1.0.0",
+  "description": "Proyecto de práctica",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/estilo.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Ariel-Bustos/Proyecto-Desarrollo-Web---Lucas-Bustos.git"
+  },
+  "author": "Lucas Ariel Bustos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-Ariel-Bustos/Proyecto-Desarrollo-Web---Lucas-Bustos/issues"
+  },
+  "homepage": "https://github.com/Lucas-Ariel-Bustos/Proyecto-Desarrollo-Web---Lucas-Bustos#readme"
+}

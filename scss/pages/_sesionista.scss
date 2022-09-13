@@ -1,0 +1,99 @@
+.fondoSecionista {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/Bajos.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.gridMenu4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "videoYoutube enlace";
+    gap: 10px;
+}
+
+.perfilSesion {
+    border-radius: 10px;
+}
+
+.perfil4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #adad19;
+    padding: 10px;
+    border: 2px solid #570d0d;
+    border-radius: 10px;
+    grid-area: perfil4;
+}
+
+.contenidoSesionista {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.perfil4__video {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;    
+}
+
+.videoYoutube {
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-area: videoYoutube;
+}
+
+.perfil4__sesionista {
+    font-size: 25px;
+    color: #164e16;
+}
+
+.perfil4__sesionistaParrafo {
+    font-size: 18px;
+    color: #164e16;
+}
+
+.perfil4__enlace {
+        margin-top: 50px;
+        width: 60%;
+        max-width: 500px;
+        max-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: #adad19;
+        padding: 10px;
+        border: 2px solid #570d0d;
+        border-radius: 10px;
+        grid-area: enlace;
+}
+
+.perfil4__enlace:hover {
+    transform: scale(1.1);
+}
+
+.bi-youtube {
+    font-size: 2rem;
+    width: 60px;
+    color: red;
+}
+
+.enlaceYoutube {
+    display: flex;
+    padding: 0%;
+    gap: 10px;
+}
