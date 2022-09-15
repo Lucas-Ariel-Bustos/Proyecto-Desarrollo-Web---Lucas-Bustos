@@ -24,16 +24,14 @@
 .perfil5 {
     width: 80%;
     height: 80%;
-    background-color: #adad19;
+    background-color: $tarjetas;
     padding: 10px;
-    border: 2px solid #570d0d;
+    border: 2px solid $bordes;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center center;
  }
-
-
 
 .perfil5__contacto {
     display: flex;

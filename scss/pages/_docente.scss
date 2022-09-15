@@ -23,9 +23,9 @@
 
 .perfil3 {
     width: 100%;
-    background-color: #adad19;
+    background-color: $tarjetas;
     padding: 10px;
-    border: 2px solid #570d0d;
+    border: 2px solid $bordes;
     border-radius: 10px;
     grid-area: perfil3;
     display: flex;
