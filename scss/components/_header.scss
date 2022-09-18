@@ -5,22 +5,22 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
-    &header {
+}
+
+.header {
     background-color: $fondo;
     display: flex;
     justify-content: space-between;
     border-radius: 0 0 10px 10px;
     max-width: 100%;
     max-height: 60px;
-
-    &logoHeader {
+    
+    .logoHeader {
         border-radius: 45% 0 45% 0;
         margin-left: 20px;
     }
-    }
-
-    &titulo-principal {
+    
+    .titulo-principal {
         display: flex;
         color: antiquewhite;
         font-size: 40px;
@@ -28,18 +28,17 @@
         align-items: center;
     }
 
-    
+    .bg-propio {
+        background-color: #1b8f1b;
+     }
 }
 
-// .bg-propio {
-//     background-color: #1b8f1b;
+
+
+// .nav {
+//     display: flex;
+//     align-items: center;
 // }
-
-
-.nav {
-    display: flex;
-    align-items: center;
-}
 
 .navegador__item {
     display: inline-block;
@@ -47,7 +46,7 @@
     padding-inline: 10px;
     padding-block: 10px;
     justify-content: center;
-   }
+}
 
 .navegador__item a {
     text-decoration: none;
@@ -61,8 +60,4 @@
 
 .navegador__item a:hover {
     text-decoration: underline;
-}
-
-main {
-    width: 100%;
 }

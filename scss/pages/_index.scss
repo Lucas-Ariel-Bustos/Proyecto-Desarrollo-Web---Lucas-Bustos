@@ -8,9 +8,8 @@
     "perfil1 perfil1 objetivos"
     "perfil1 perfil1 alumnos";
     gap: 50px;
-    }
 
-    &perfil1 {
+    .perfil1 {
         width: 100%;
         background-color: $tarjetas;
         padding: 10px;
@@ -22,24 +21,26 @@
         align-items: center;
         flex-direction: column;
 
-    &__imagen {
-    width: 100%;
-    border-radius: 10px;
-    animation: perfil1__imagenMovimiento 2s alternate;
-    animation-direction: reverse;
+        &__imagen {
+            width: 100%;
+            border-radius: 10px;
+            animation: perfil1__imagenMovimiento 2s alternate;
+            animation-direction: reverse;
+        }
+
+        .perfil1__quienSoy {
+            font-size: 25px;
+            color: $letras;
+        }
+
+        .parrafoQuienSoy {
+            font-size: 18px;
+            color: $letras;
+        } 
+
     }
 
-    &__quienSoy {
-        font-size: 25px;
-        color: #164e16;
-
-        &parrafoQuienSoy {
-            font-size: 18px;
-            color: #164e16;
-        }
-    }    
-
-    &objetivos {
+    .objetivos {
         width: 100%;
         height: auto;
         background-color: $tarjetas;
@@ -52,18 +53,18 @@
         align-items: center;
         flex-direction: column;
 
-        &objetivosTitulo {
+        .objetivosTitulo {
             font-size: 25px;
-            color: #164e16;
+            color: $letras;
         }
 
-        &parrafoObjetivos {
+        .parrafoObjetivos {
             font-size: 18px;
-            color: #164e16;
+            color: $letras;
         }
-       }
+    }
 
-    &alumnos {
+    .alumnos {
         width: 100%;
         height: 80%;
         background-color: $tarjetas;
@@ -78,19 +79,21 @@
         align-items: center;
         flex-direction: column;
 
-        &alumnosTitulo {
+        .alumnosTitulo {
             font-size: 25px;
-            color: #164e16;
+            color: $letras;
         }
 
-        &parrafoAlumno {
+        .parrafoAlumno {
             font-size: 18px;
-            color: #164e16;
+            color: $letras;
         }
-       }
-    }
+    } 
 
-        // @keyframes perfil1__imagenMovimiento {
-        //    100% {
-        //       width: 20%;
-        //    }
+}
+
+@keyframes perfil1__imagenMovimiento {
+    100% {
+       width: 20%;
+    }
+ }
