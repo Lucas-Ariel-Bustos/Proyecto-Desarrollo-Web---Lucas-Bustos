@@ -101,9 +101,9 @@
     flex-direction: column;
     transition: all 2s;
 
-    &hover {
+    &:hover {
         width: 600px;
-    }   
+    }
 }
 
 .perfil2__biografia {

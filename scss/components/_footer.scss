@@ -1,34 +1,27 @@
 .piedepagina {
-    background-color: #1b8f1b;
+    background-color: $fondo;
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content:space-around;
     align-items: center;
     gap: 10px;
-    color: antiquewhite;
-}
+    color: $letrasBlancas;
 
-.piedapagina__titulo {
-    display: flex;
-    margin-right: 20px;  
-}
 
-.bi-instagram {
-    font-size: 2rem;
-    color: #940c88;
-    margin-right: 10px;
-}
+   //  extend
+   .bi-facebook {
+      font-size: 2rem;
+      color: $letrasBlancas;
 
-.instagram {
-    display: flex;
-}
+      &:hover {
+         color: #202079;
+      }
+    }
 
-.bi-facebook {
-    font-size: 2rem;
-    color: #202079;
-    margin-right: 50px;
-}
-
-.facebook {
-    display: flex;
+    .bi-instagram {
+      @extend .bi-facebook;
+      &:hover {
+         color: #940c88;
+      }
+    }
 }

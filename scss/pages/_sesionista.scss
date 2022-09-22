@@ -58,12 +58,12 @@
 
 .perfil4__sesionista {
     font-size: 25px;
-    color: #164e16;
+    color: $letras;
 }
 
 .perfil4__sesionistaParrafo {
     font-size: 18px;
-    color: #164e16;
+    color: $letras;
 }
 
 .perfil4__enlace {
@@ -89,11 +89,73 @@
 .bi-youtube {
     font-size: 2rem;
     width: 60px;
-    color: red;
+    color: $letrasBlancas;
+
+    &:hover {
+        color: red;
+  }
 }
 
 .enlaceYoutube {
     display: flex;
     padding: 0%;
     gap: 10px;
+    text-decoration: none;
 }
+
+// .momentos {
+//     color: #164e16;
+// }
+
+.tituloInfo {
+    color: $letras;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.masInformacion {
+    display: flex;
+    gap: 20px;
+}
+
+.masInfo {
+    color: white;
+}
+
+// map
+$coloresFondo: (
+   informacion1: #04ff00,
+   informacion2: rgb(255, 247, 0),
+   informacion3: rgb(254, 2, 2),
+   informacion4: #7ee97c
+);
+
+@each $informacion, $colores in $coloresFondo {
+    .mas-#{$informacion} {
+       background-color: $colores;
+    }
+ }
+
+//  map-get
+ .masInfo1 {
+    background-color: map-get($coloresFondo , informacion4 );
+ }
+
+//  mixin
+ @mixin cajasMasInfo ($ancho, $alto, $aling) {
+    width: $ancho;
+    height: $alto;
+    text-align: $aling    
+ }
+
+ .masInfo1 {
+    @include cajasMasInfo (400px, 200px, center);
+ }
+
+ .masInfo2 {
+    @include cajasMasInfo (300px, 200px, center);
+ }
+
+ .masInfo3 {
+    @include cajasMasInfo (500px, 200px, center);
+ }
