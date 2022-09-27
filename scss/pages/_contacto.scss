@@ -12,70 +12,28 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
 
-.contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 100px;
-}
-.perfil5 {
-    width: 80%;
-    height: 80%;
-    background-color: $tarjetas;
-    padding: 10px;
-    border: 2px solid $bordes;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center center;
- }
+    .contacto {
+        color: $letras;
+        width: 350px;
+        height: 400px;
+        background-color: $tarjetas;
+        padding: 10px;
+        border: 2px solid $bordes;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 100px;
+    }
 
-.perfil5__contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 25px;
-    color: #164e16;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-.perfil5__formulario {
-    font-size: 18px;
-    color: #164e16;
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-fieldset {
-    border: none;
-}
-
-.formulario__consulta {
-    font-size: 18px;
-    /* color: #adad19; */
-    padding: 10%;
-    margin-bottom: 10px;
-}
-
-.formulario1 {
-    justify-content: center center;
-}
-
-.formulario__consulta-texto {
-    font-size: 18px;
-    color: #164e16;
-    margin-bottom: 10px;
-}
-
-.label {
-    font-size: 12px;
-    color: #164e16;
+    fieldset {
+        border: none;
+    }
+    .label {
+        font-size: 12px;
+        color: $letras;
+    }   
 }

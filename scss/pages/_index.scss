@@ -11,6 +11,7 @@
 
     .perfil1 {
         width: 100%;
+        height: 675px;
         background-color: $tarjetas;
         padding: 10px;
         border: 2px solid $bordes;
@@ -22,7 +23,7 @@
         flex-direction: column;
 
         &__imagen {
-            width: 100%;
+            width: 65%;
             border-radius: 10px;
             animation: perfil1__imagenMovimiento 2s alternate;
             animation-direction: reverse;

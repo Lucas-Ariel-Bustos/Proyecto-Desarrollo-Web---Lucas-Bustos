@@ -7,8 +7,12 @@
     gap: 10px;
     color: $letrasBlancas;
 
-
-   //  extend
+    .piedepagina__titulo {
+      &:hover {
+         color: $bordes;
+      }
+    }
+    
    .bi-facebook {
       font-size: 2rem;
       color: $letrasBlancas;
@@ -20,8 +24,17 @@
 
     .bi-instagram {
       @extend .bi-facebook;
+
       &:hover {
          color: #940c88;
+      }
+    }
+
+    .bi-youtube {
+      @extend .bi-facebook;
+
+      &:hover {
+         color: red;
       }
     }
 }

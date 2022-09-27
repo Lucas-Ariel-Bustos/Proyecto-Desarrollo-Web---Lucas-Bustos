@@ -67,6 +67,7 @@ main {
   gap: 50px; }
   .gridMenu .perfil1 {
     width: 100%;
+    height: 675px;
     background-color: #adad19;
     padding: 10px;
     border: 2px solid #570d0d;
@@ -77,7 +78,7 @@ main {
     align-items: center;
     flex-direction: column; }
     .gridMenu .perfil1__imagen {
-      width: 100%;
+      width: 65%;
       border-radius: 10px;
       animation: perfil1__imagenMovimiento 2s alternate;
       animation-direction: reverse; }
@@ -345,49 +346,31 @@ main {
   background-image: url(/assets/img/Bajos.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  display: grid; }
 
 .gridMenu4 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
-  margin: 50px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "videoYoutube enlace";
-  gap: 10px; }
-
-.perfilSesion {
-  border-radius: 10px; }
+  margin: 50px; }
 
 .perfil4 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: #adad19;
   padding: 10px;
   border: 2px solid #570d0d;
   border-radius: 10px;
-  grid-area: perfil4; }
+  gap: 30px; }
 
 .contenidoSesionista {
   display: flex;
   flex-direction: column;
   margin-left: 10px; }
-
-.perfil4__video {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 30px;
-  border-radius: 10px; }
-
-.videoYoutube {
-  width: 500px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  grid-area: videoYoutube; }
 
 .perfil4__sesionista {
   font-size: 25px;
@@ -397,48 +380,88 @@ main {
   font-size: 18px;
   color: #164e16; }
 
-.perfil4__enlace {
-  margin-top: 50px;
-  width: 60%;
-  max-width: 500px;
-  max-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: #adad19;
-  padding: 10px;
-  border: 2px solid #570d0d;
-  border-radius: 10px;
-  grid-area: enlace; }
+.perfil4__video {
+  width: 100%;
+  height: 100%;
+  margin: 0 30px 30px 0;
+  border-radius: 10px; }
 
-.perfil4__enlace:hover {
-  transform: scale(1.1); }
+.videoYoutube {
+  width: 350px;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .bi-youtube {
   font-size: 2rem;
   width: 60px;
-  color: antiquewhite; }
+  color: #164e16; }
   .bi-youtube:hover {
     color: red; }
 
-.enlaceYoutube {
+.tituloEquipamiento {
   display: flex;
-  padding: 0%;
-  gap: 10px;
-  text-decoration: none; }
+  justify-content: center; }
 
 .tituloInfo {
+  width: 200px;
   color: #164e16;
+  margin-top: 50px;
+  padding: 0%;
   text-align: center;
-  background-color: aquamarine; }
+  background-color: aquamarine;
+  border-radius: 10px; }
 
 .masInformacion {
   display: flex;
+  justify-content: center;
+  margin: 10px;
   gap: 20px; }
 
-.masInfo {
+.masInfo1 {
+  justify-content: center;
+  align-items: center;
+  border-color: #570d0d;
+  border-radius: 10px;
   color: white; }
+  .masInfo1 .fender {
+    margin: 10px;
+    padding: 0%;
+    width: 300px;
+    border-radius: 10px; }
+  .masInfo1 .fenderTexto {
+    align-items: center;
+    color: #164e16; }
+
+.masInfo2 {
+  justify-content: center;
+  align-items: center;
+  border-color: #570d0d;
+  border-radius: 10px;
+  color: white; }
+  .masInfo2 .steinberger {
+    margin: 10px;
+    padding: 0%;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px; }
+  .masInfo2 .steinbergerTexto {
+    color: #164e16; }
+
+.masInfo3 {
+  justify-content: center;
+  align-items: center;
+  border-color: #570d0d;
+  border-radius: 10px;
+  color: white; }
+  .masInfo3 .contrabajo {
+    width: 180px;
+    height: 200px;
+    margin: 10px;
+    padding: 0%;
+    border-radius: 10px; }
+  .masInfo3 .contrabajoTexto {
+    color: #164e16; }
 
 .mas-informacion1 {
   background-color: #04ff00; }
@@ -456,18 +479,18 @@ main {
   background-color: #7ee97c; }
 
 .masInfo1 {
-  width: 400px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
   text-align: center; }
 
 .masInfo2 {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 250px;
   text-align: center; }
 
 .masInfo3 {
-  width: 500px;
-  height: 200px;
+  width: 200px;
+  height: 250px;
   text-align: center; }
 
 .fondoContacto {
@@ -483,64 +506,25 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 10px; }
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 100px; }
-
-.perfil5 {
-  width: 80%;
-  height: 80%;
-  background-color: #adad19;
-  padding: 10px;
-  border: 2px solid #570d0d;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center center; }
-
-.perfil5__contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 25px;
-  color: #164e16;
-  margin-bottom: 10px;
-  margin-left: 10px; }
-
-.perfil5__formulario {
-  font-size: 18px;
-  color: #164e16;
-  display: flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px; }
-
-fieldset {
-  border: none; }
-
-.formulario__consulta {
-  font-size: 18px;
-  /* color: #adad19; */
-  padding: 10%;
-  margin-bottom: 10px; }
-
-.formulario1 {
-  justify-content: center center; }
-
-.formulario__consulta-texto {
-  font-size: 18px;
-  color: #164e16;
-  margin-bottom: 10px; }
-
-.label {
-  font-size: 12px;
-  color: #164e16; }
+  .mainSection .contacto {
+    color: #164e16;
+    width: 350px;
+    height: 400px;
+    background-color: #adad19;
+    padding: 10px;
+    border: 2px solid #570d0d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px; }
+  .mainSection fieldset {
+    border: none; }
+  .mainSection .label {
+    font-size: 12px;
+    color: #164e16; }
 
 .piedepagina {
   background-color: #1b8f1b;
@@ -550,13 +534,17 @@ fieldset {
   align-items: center;
   gap: 10px;
   color: antiquewhite; }
-  .piedepagina .bi-facebook, .piedepagina .bi-instagram {
+  .piedepagina .piedepagina__titulo:hover {
+    color: #570d0d; }
+  .piedepagina .bi-facebook, .piedepagina .bi-instagram, .piedepagina .bi-youtube {
     font-size: 2rem;
     color: antiquewhite; }
-    .piedepagina .bi-facebook:hover, .piedepagina .bi-instagram:hover {
+    .piedepagina .bi-facebook:hover, .piedepagina .bi-instagram:hover, .piedepagina .bi-youtube:hover {
       color: #202079; }
   .piedepagina .bi-instagram:hover {
     color: #940c88; }
+  .piedepagina .bi-youtube:hover {
+    color: red; }
 
 @media screen and (max-width: 480px) {
   .gridMenu {
@@ -565,8 +553,12 @@ fieldset {
   .gridMenu2 {
     display: flex;
     flex-direction: column; }
-  .gridMenu3 {
+  .perfil4 {
     display: flex;
+    flex-direction: column; }
+  .masInformacion {
+    display: flex;
+    justify-content: center;
     flex-direction: column; }
   .gridMenu4 {
     display: flex;
