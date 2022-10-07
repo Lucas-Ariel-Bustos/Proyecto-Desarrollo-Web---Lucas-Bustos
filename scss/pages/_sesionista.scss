@@ -21,7 +21,7 @@
 
     .videoYoutube {
         width: 35%;
-        height: 250px;
+        height: 300px;
         margin-top: 10px;
         margin-bottom: 10px;
 
@@ -70,7 +70,8 @@
     gap: 20px;
 
     .masInfo1 {
-        width: 300px;
+        max-width: 300px;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -82,7 +83,7 @@
         
         .fender {
             margin:10px;
-            width: 85%;
+            max-width: 85%;
             border-radius: 10px;
         }
     

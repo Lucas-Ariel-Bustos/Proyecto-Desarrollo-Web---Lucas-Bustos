@@ -356,7 +356,7 @@ body {
   box-shadow: 10px 10px 20px; }
   .perfil4 .videoYoutube {
     width: 35%;
-    height: 250px;
+    height: 300px;
     margin-top: 10px;
     margin-bottom: 10px; }
     .perfil4 .videoYoutube .perfil4__video {
@@ -393,7 +393,8 @@ body {
   margin: 10px;
   gap: 20px; }
   .masInformacion .masInfo1 {
-    width: 300px;
+    max-width: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -404,7 +405,7 @@ body {
     box-shadow: 5px 5px 10px black; }
     .masInformacion .masInfo1 .fender {
       margin: 10px;
-      width: 85%;
+      max-width: 85%;
       border-radius: 10px; }
     .masInformacion .masInfo1 .fenderTexto {
       align-items: center;
@@ -482,7 +483,7 @@ body {
     color: #164e16;
     max-width: 350px;
     height: auto;
-    margin: 70px;
+    margin: 100px 70px 200px 70px;
     padding: 10px;
     gap: 5px;
     background-color: #e8dfcd;
@@ -529,9 +530,18 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 0 0 10px 10px;
     max-width: 100%;
-    max-height: auto; }
+    max-height: auto;
+    z-index: 999;
+    padding: 10px; }
+  .navbar {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+    background: #060606;
+    background: linear-gradient(90deg, #060606 0%, #38cf75 100%);
+    border-radius: 0 0 10px 10px; }
   .container-fluid {
     flex-direction: column;
     justify-content: space-between;
@@ -545,6 +555,8 @@ body {
         background-color: #2b4103;
         border-radius: 50%;
         color: antiquewhite; }
+  main {
+    margin-top: 60px; }
   .gridMenu {
     display: flex;
     flex-direction: column; }
@@ -566,13 +578,15 @@ body {
         font-size: 20px;
         color: #164e16;
         text-align: center; }
-  .perfil4 {
-    display: flex;
-    flex-direction: column; }
-  .masInformacion {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
   .gridMenu4 {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+    .gridMenu4 .perfil4 {
+      display: flex;
+      flex-direction: column; }
+      .gridMenu4 .perfil4 .videoYoutube {
+        width: 90%; }
+    .gridMenu4 .masInformacion {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; } }
