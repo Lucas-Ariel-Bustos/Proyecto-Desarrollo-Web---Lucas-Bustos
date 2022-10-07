@@ -589,4 +589,6 @@ body {
     .gridMenu4 .masInformacion {
       display: flex;
       justify-content: center;
-      flex-direction: column; } }
+      flex-direction: column; }
+  .contacto {
+    margin-bottom: 500px; } }
