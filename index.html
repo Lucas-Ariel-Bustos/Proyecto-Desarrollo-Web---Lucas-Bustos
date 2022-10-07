@@ -9,24 +9,24 @@
         <meta name="keywords" content="Música, Bajo, Bajista, Bajo eléctrico, Sesionista, Profesor de bajo">
         <link rel="shortcut icon" href="./assets/img/Clavedefa.jpg" type="image/x-icon" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-        <link rel="stylesheet" href="./css/estilo.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/estilo.css" />
     </head>
-    <body class="fondo">
+    
+    <body>
         <header class="header">
-            <img class="logoHeader" src="./assets/img/Clavedefa.jpg" alt="Logo principal" width="50" />       
-            <nav class="navbar navbar-expand-lg bg-propio">
+            <a href="./index.html">
+                <img class="logoHeader" src="./assets/img/LogoPronicipal.png" alt="Logo principal" /> 
+            </a>     
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <h1 class="titulo-principal">Lucas Dimatteo</h1>
-                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="navegador__item nav-item active">
-                                <a class="nav-link active" href="./index.html">Inicio</a>
+                                <a class="nav-link" href="./index.html">Inicio</a>
                             </li>
                          <li class="navegador__item nav-item">
                                 <a class="nav-link" href="./pages/biografia.html">Biografía</a>
@@ -45,22 +45,33 @@
                 </div>
             </nav>
         </header>
+
         <main>
-            <div class="gridMenu"> 
-                <div class="perfil1">
+            <section class="gridMenu"> 
+                <div class="perfil1 tilt-in-top-1">
                     <img class="perfil1__imagen" src="./assets/img/Perfil.jpg" alt="Imágen Presentación" />
-                    <h3 class="perfil1__quienSoy">¿Quién soy?</h3>
-                    <p class="perfil1__parrafoQuienSoy ">En esta página vas a encotrar información sobre mis recursos artísticos para la ejecución del bajo eléctrico y también para la contratación como secionista en producciones en vivo y de estudio, te voy a contar que técnicas manejo y que recursos podes aprender para mejorar tu ejecución con el instrumento</p>
-                </div>    
-                <div class="objetivos">
+                    <div class="perfil1__contenido">
+                        <h3 class="perfil1__quienSoy">¿Quién soy?</h3>
+                        <p class="perfil1__parrafoQuienSoy">Hola, mi nombre es Lucas Dimatteo y te cuento que en este sitio vas a encotrar información sobre mis recursos artísticos para la ejecución del bajo eléctrico, el contrabajo y también podras contactarme para la contratación como secionista de producciones en vivo y de estudio, te voy a contar que técnicas manejo y que recursos podes aprender para mejorar tu ejecución con el instrumento. Recibirás consejos, feedback en tus consultas, todo lo que necesitas para sacar lo mejor de vos y tu parte artística. Además te estaré informando sobre las actualizaciones y las nuevas tendencias en bajos y amplificadores.
+                        </p>
+                    </div>
+                </div> 
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=86GGbcPKaAU" target="_blank">
+                        <video class="videoIndex scale-in-top" src="./assets/video/Index video.mp4" autoplay muted loop></video>
+                    </a>
+                </div>   
+                <div class="objetivos  tilt-in-fwd-bl">
                     <h3 class="objetivosTitulo">Objetivos</h3>
-                    <p class="parrafoObjetivos">Con los cursos que te ofrezco vas a poder lograr el desarrollo, no solo como instrumento acompañante de canciones, sino también, que puedas lograr un desempeño solista de alto rendimiento. Además te invito a que puedas asegurarte que tus canciones tengan lineas de bajos que acompañen a todos los instrumentos de manera correcta</p>
+                    <p class="parrafoObjetivos">Con los cursos que te ofrezco vas a poder lograr el desarrollo, no solo como instrumentista acompañante de canciones, sino también, que puedas lograr un desempeño solista de alto rendimiento. Además te invito a que puedas asegurarte que tus canciones tengan lineas de bajos que acompañen a todos los instrumentos de manera correcta, ya sea en una grabación o en vivo con mi participación en la producción.</p>
                 </div>
-                <div class="alumnos">
+                <div class="alumnos tilt-in-fwd-br">
                     <h3 class="alumnosTitulo">Perfil Alumno</h3>
-                    <p class="parrafoAlumno">El egresado termina el curso con todas las técnicas necesarias para el desarrollo del instrumento y también, sabiendo el lugar que debe ocupar en un proyecto multiinstrumental, desde lo musical y humano, frente a sus colegas.</p>
+                    <p class="parrafoAlumno">El egresado de mis cursos logra el manejo básico de todas las técnicas necesarias para el desarrollo del instrumento y también, sabiendo el lugar que debe ocupar en un proyecto multiinstrumental, desde lo musical y humano, frente a sus colegas, ya que a la hora de ensamblar, es importante entablar buenas relaciones con los demás.</p>
                 </div>
-            </main>
+            </section>    
+        </main>
+            
             <footer class="piedepagina">
                 <div class="instagram">
                     <a href="https://www.instagram.com/lucas__dimatteo/" target="_blank">

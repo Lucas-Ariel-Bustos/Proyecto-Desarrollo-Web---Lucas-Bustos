@@ -1,17 +1,20 @@
 .gridMenu {
     width: 90%;
-    margin: 30px;
+    margin: 30px 10px 30px 10px;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "perfil1 perfil1 objetivos"
-    "perfil1 perfil1 alumnos";
-    gap: 50px;
+    "perfil1   perfil1    perfil1"
+    "perfil1   perfil1    perfil1"
+    "objetivos videoIndex alumnos";
+    gap: 30px;
 
     .perfil1 {
         width: 100%;
-        height: 675px;
+        height: auto;
         background-color: $tarjetas;
         padding: 10px;
         border: 2px solid $bordes;
@@ -20,25 +23,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        gap: 20px;
+        box-shadow: 10px 10px 20px;
 
-        &__imagen {
-            width: 65%;
+        .perfil1__imagen {
+            width:20%;
+            border: 2px solid $bordes;
             border-radius: 10px;
-            animation: perfil1__imagenMovimiento 2s alternate;
-            animation-direction: reverse;
         }
 
         .perfil1__quienSoy {
-            font-size: 25px;
+            font-size: 40px;
             color: $letras;
         }
 
-        .parrafoQuienSoy {
-            font-size: 18px;
+        .perfil1__parrafoQuienSoy {
+            font-size: 20px;
             color: $letras;
+            text-align: justify;
         } 
-
     }
 
     .objetivos {
@@ -52,7 +55,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: justify;
         flex-direction: column;
+        box-shadow: 10px 10px 20px;
 
         .objetivosTitulo {
             font-size: 25px;
@@ -65,12 +70,27 @@
         }
     }
 
+    .video {
+        grid-area: videoIndex;
+
+        .videoIndex {
+            width: 100%;
+            height: auto;
+            border: 2px solid $bordes;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px black;
+    
+            &:hover {
+                border: 10px solid $bordes;
+                z-index: 1;
+            }
+        }
+    } 
+    
     .alumnos {
         width: 100%;
         height: 80%;
         background-color: $tarjetas;
-        /* background: rgb(121,114,9);
-        background: linear-gradient(90deg, rgba(121,114,9,1) 39%, rgba(78,255,0,1) 100%); */
         padding: 10px;
         border: 2px solid $bordes;
         border-radius: 10px;
@@ -78,7 +98,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: justify;
         flex-direction: column;
+        box-shadow: 10px 10px 20px; 
 
         .alumnosTitulo {
             font-size: 25px;
@@ -91,9 +113,3 @@
         }
     } 
 }
-
-@keyframes perfil1__imagenMovimiento {
-    100% {
-       width: 20%;
-    }
- }

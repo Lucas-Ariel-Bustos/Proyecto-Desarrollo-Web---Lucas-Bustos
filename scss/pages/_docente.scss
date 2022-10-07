@@ -1,119 +1,63 @@
-.fondoDocente {
-    width: 100%;
-    height: 100%;
-    background-image: url(../assets/img/contrabajo-instrumento-arco-clavijero.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
 .gridMenu3 {
     width: 90%;
     margin: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "perfil3 perfil3 docenteMomento1"
-    "perfil3 perfil3 docenteMomento2";
-    gap: 50px;
-}
-
-/* animación */
-
-.perfil3 {
-    width: 100%;
-    background-color: $tarjetas;
-    padding: 10px;
-    border: 2px solid $bordes;
-    border-radius: 10px;
-    grid-area: perfil3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    animation: perfil3Movimiento 4s;
-}
-
-/* @keyframes perfil3Movimiento {
-    from {
-        background-color: #1b8f1b;
-    }
     
-    to {
-        background-color: #adad19 
+    .perfil3 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        background-color: $tarjetas;
+        padding: 10px;
+        border: 2px solid $bordes;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        gap: 20px;
+        box-shadow: 10px 10px 20px;
+        
+        &__imagen {
+            max-width: 320px;
+            height: auto;
+            border: 2px solid $bordes;
+            border-radius: 10px;
+        }
+
+        &__docente {
+            font-size: 30px;
+            color: $letras;
+            text-align: center;
+        }
+        
+        &__docenteParrafo {
+            font-size: 15px;
+            color: $letras;
+        }
     }
-} */
 
-.perfil3__imagen {
-    width: 100%;
-    border-radius: 10px;
-    animation: perfil3__imagenMovimento 4s reverse;
-}
+    .bajistas {
+        color: $letras;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
 
-@keyframes perfil3__imagenMovimento {
-    100% {
-        width: 20%;
+        &__titulo {
+            background-color: #7fffd4;
+            border-radius: 10px;
+            padding-inline: 10px;
+            box-shadow: 10px 10px 20px black;
+        }    
     }
-}
 
-.perfil3__docente {
-    font-size: 25px;
-    color: #164e16;
-    grid-area: docente;
-}
+    .carousel {
+        max-width: 500px;
+        height: auto;
 
-.perfil3__docenteParrafo {
-    font-size: 18px;
-    color: #164e16;
-}
-
-.momentosDocente {
-    font-weight: bold;
-    color: #570d0d;
-}
-
-/* .perfil3__momentos {
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    color: #570d0d; */
-    /* background-color: #adad19;
-    padding: 10px;
-    border: 2px solid #570d0d;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-/* } */
-
-.docenteMomento1 {
-    grid-area: docenteMomento1;
-    width: 400px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: all 2s;
-}   
-
-.docenteMomento1:hover {
-    width: 600px;
-}
-
-.docenteMomento2 {
-    grid-area: docenteMomento2;
-    width: 400px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: all 2s;
-}   
-
-.docenteMomento2:hover {
-    width: 600px;
+        .carousel-inner {
+            box-shadow: 10px 10px 20px black;
+        }
+    }
 }

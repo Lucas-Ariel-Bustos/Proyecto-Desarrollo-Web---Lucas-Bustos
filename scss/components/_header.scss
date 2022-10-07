@@ -1,46 +1,38 @@
-.fondo {
+body {
     width: 100%;
     height: 100%;
-    background-image: url(/assets/img/Fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: rgb(52,62,32);
+    background: linear-gradient(90deg, rgba(52,62,32,1) 0%, rgba(95,108,71,1) 45%);;
 }
 
 .header {
-    background-color: $fondo;
+    background: rgb(6,6,6);
+    background: linear-gradient(90deg, rgba(6,6,6,1) 0%, rgba(56,207,117,1) 100%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 0 0 10px 10px;
     max-width: 100%;
-    max-height: 60px;
+    max-height: auto;
     
     .logoHeader {
-        border-radius: 45% 0 45% 0;
+        max-width: 150px;
+        border-radius: 45%;
         margin-left: 20px;
     }
-    
-    .titulo-principal {
-        display: flex;
-        color: antiquewhite;
-        font-size: 40px;
-        text-align: center;
-        align-items: center;
-        
-        &:hover {
-            color: $bordes
+
+    .navbar-toggler {
+        color: $letrasBlancas;
+
+        &-icon {
+            color: $letrasBlancas
         }
     }
-
-    .bg-propio {
-        background-color: #1b8f1b;
-     }
 }
 
-// .nav {
-//     display: flex;
-//     align-items: center;
-// }
+.collapse {
+    display: flex;
+}
 
 .navegador__item {
     display: inline-block;
@@ -52,14 +44,17 @@
 
 .navegador__item a {
     text-decoration: none;
-    color: antiquewhite;
+    color: $bordes;
 }
 
 .active {
     text-decoration: underline;
-    color: black;
+    color: $letrasBlancas;    
 }
 
 .navegador__item a:hover {
     text-decoration: underline;
+    background-color: #2b4103;
+    border-radius: 50%;
+    color: $letrasBlancas;
 }

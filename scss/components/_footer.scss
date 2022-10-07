@@ -1,11 +1,12 @@
 .piedepagina {
-    background-color: $fondo;
-    border-radius: 10px 10px 0 0;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    gap: 10px;
-    color: $letrasBlancas;
+   background: rgb(6,6,6);
+   background: linear-gradient(90deg, rgba(6,6,6,1) 0%, rgba(56,207,117,1) 100%);
+   border-radius: 10px 10px 0 0;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   gap: 10px;
+   color: $letrasBlancas;
 
     .piedepagina__titulo {
       &:hover {
